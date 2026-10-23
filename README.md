@@ -1,7 +1,8 @@
 # Big Data Driven Analysis of Indian Agricultural Market Prices Using Hadoop Ecosystem
 
-**CAT – II Project Report — Big Data Computing**  
+ Project Report — Big Data Computing**  
 **Project Authors:**
+
 - **Mrudhula D**
 
 ---
