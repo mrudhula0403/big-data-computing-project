@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-10-14T06:34:03.148758+00:00",
+  "estimate_label": "Estimated, not guaranteed",
+  "actual": [
+    {
+      "year": 1997,
+      "production": 851232906.0
+    },
+    {
+      "year": 1998,
+      "production": 5825320640.4
+    },
+    {
+      "year": 1999,
+      "production": 6434665985.1
+    },
+    {
+      "year": 2000,
+      "production": 7449709127.1
+    },
+    {
+      "year": 2001,
+      "production": 7465540840.2699995
+    },
+    {
+      "year": 2002,
+      "production": 7696955162.64
+    },
+    {
+      "year": 2003,
+      "production": 7917973504.7300005
+    },
+    {
+      "year": 2004,
+      "production": 8189461694.86
+    },
+    {
+      "year": 2005,
+      "production": 8043757329.74
+    },
+    {
+      "year": 2006,
+      "production": 8681913123.78
+    },
+    {
+      "year": 2007,
+      "production": 6879442338.58
+    },
+    {
+      "year": 2008,
+      "production": 7717018402.16
+    },
+    {
+      "year": 2009,
+      "production": 7660494024.81
+    },
+    {
+      "year": 2010,
+      "production": 6307608525.370001
+    },
+    {
+      "year": 2011,
+      "production": 14308904087.130001
+    },
+    {
+      "year": 2012,
+      "production": 8171054746.03
+    },
+    {
+      "year": 2013,
+      "production": 12903588632.88
+    },
+    {
+      "year": 2014,
+      "production": 8664540631.11
+    },
+    {
+      "year": 2015,
+      "production": 6935064.7
+    }
+  ],
+  "forecasts": [
+    {
+      "year": 2016,
+      "production": 32665752587.2013,
+      "model": "linear_regression"
+    },
+    {
+      "year": 2017,
+      "production": 33294045187.02346,
+      "model": "linear_regression"
+    },
+    {
+      "year": 2018,
+      "production": 33933613747.292023,
+      "model": "linear_regression"
+    },
+    {
+      "year": 2016,
+      "production": 12710310419.485847,
+      "model": "random_forest"
+    },
+    {
+      "year": 2017,
+      "production": 12710310419.485847,
+      "model": "random_forest"
+    },
+    {
+      "year": 2018,
+      "production": 12710310419.485847,
+      "model": "random_forest"
+    },
+    {
+      "year": 2016,
+      "production": 14068611442.22,
+      "model": "last_year_repeated"
+    },
+    {
+      "year": 2017,
+      "production": 14068611442.22,
+      "model": "last_year_repeated"
+    },
+    {
+      "year": 2018,
+      "production": 14068611442.22,
+      "model": "last_year_repeated"
+    }
+  ],
+  "metrics": {
+    "linear_regression": {
+      "mae": 31188889.01554717,
+      "rmse": 214547309.86222166,
+      "mape": 31913753.451780356,
+      "test_points": 1552
+    },
+    "random_forest": {
+      "mae": 5164122.652529611,
+      "rmse": 95236403.15338501,
+      "mape": 58153.43519957423,
+      "test_points": 1552
+    },
+    "last_year_repeated": {
+      "mae": 1631677.3680927837,
+      "rmse": 41071274.75889707,
+      "mape": 6580.135858185114,
+      "test_points": 1552
+    }
+  }
+}

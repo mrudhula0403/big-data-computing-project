@@ -1,0 +1,56 @@
+[
+  {
+    "commodity": "Ginger(Dry)",
+    "avg_modal": 11600.0,
+    "avg_spread": 150.0,
+    "records": 1
+  },
+  {
+    "commodity": "Cotton",
+    "avg_modal": 8200.0,
+    "avg_spread": 100.0,
+    "records": 1
+  },
+  {
+    "commodity": "Groundnut",
+    "avg_modal": 7500.0,
+    "avg_spread": 100.0,
+    "records": 1
+  },
+  {
+    "commodity": "Cauliflower",
+    "avg_modal": 3150.0,
+    "avg_spread": 0.0,
+    "records": 1
+  },
+  {
+    "commodity": "Paddy(Common)",
+    "avg_modal": 2474.0,
+    "avg_spread": 55.8,
+    "records": 5
+  },
+  {
+    "commodity": "Bitter gourd",
+    "avg_modal": 1332.0,
+    "avg_spread": 0.0,
+    "records": 1
+  },
+  {
+    "commodity": "Brinjal",
+    "avg_modal": 1260.0,
+    "avg_spread": 0.0,
+    "records": 1
+  },
+  {
+    "commodity": "Cucumbar(Kheera)",
+    "avg_modal": 840.0,
+    "avg_spread": 0.0,
+    "records": 1
+  },
+  {
+    "commodity": "Bhindi(Ladies Finger)",
+    "avg_modal": 652.0,
+    "avg_spread": 0.0,
+    "records": 1
+  }
+]

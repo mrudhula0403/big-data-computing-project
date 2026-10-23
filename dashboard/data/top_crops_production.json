@@ -1,0 +1,42 @@
+[
+  {
+    "crop": "Coconut",
+    "total_production": 129981629216.29
+  },
+  {
+    "crop": "Sugarcane",
+    "total_production": 5535681525.92
+  },
+  {
+    "crop": "Rice",
+    "total_production": 1605470383.37
+  },
+  {
+    "crop": "Wheat",
+    "total_production": 1332825656.8
+  },
+  {
+    "crop": "Potato",
+    "total_production": 424826343.86
+  },
+  {
+    "crop": "Cotton(lint)",
+    "total_production": 297000015.7
+  },
+  {
+    "crop": "Maize",
+    "total_production": 273341803.57
+  },
+  {
+    "crop": "Jute",
+    "total_production": 181558177.9
+  },
+  {
+    "crop": "Banana",
+    "total_production": 146132679.64
+  },
+  {
+    "crop": "Soyabean",
+    "total_production": 141837219.4
+  }
+]

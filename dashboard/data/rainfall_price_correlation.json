@@ -1,0 +1,5 @@
+{
+  "correlation": 0.2678823783503087,
+  "matched_state_months": 22,
+  "interpretation": "Pearson correlation across matched state-month averages from available source files."
+}

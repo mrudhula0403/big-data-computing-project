@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Agricultural Big Data Analytics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- ================================================================
+     HEADER & NAV
+     ================================================================ -->
+<header class="app-header">
+  <div class="header-container">
+    <div class="brand">
+      <div class="brand-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+      <div class="brand-text">
+        <h1>AgriBigData Analytics</h1>
+        <div class="brand-subtitle">4 Real Datasets · Market &amp; Climate Analytics</div>
+      </div>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><button class="nav-link active" data-page="overview"><i class="fa-solid fa-house-chimney"></i> <span data-i18n="overview">Overview</span></button></li>
+      <li><button class="nav-link" data-page="prices"><i class="fa-solid fa-chart-column"></i> <span data-i18n="priceAnalysis">Price Analysis</span></button></li>
+      <li><button class="nav-link" data-page="weather"><i class="fa-solid fa-cloud-sun-rain"></i> <span data-i18n="weatherProduction">Weather &amp; Production</span></button></li>
+      <li><button class="nav-link" data-page="forecast"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="forecast">Forecast</span></button></li>
+      <li><button class="nav-link" data-page="insights"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="insights">Insights</span></button></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="language-toggle" role="group" aria-label="Dashboard language">
+        <button type="button" class="active" data-language="en">EN</button>
+        <button type="button" data-language="hi">HI</button>
+        <button type="button" data-language="ta">TA</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" data-tip="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="print-btn" id="printBtn"><i class="fa-solid fa-print"></i> Print</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================================================================
+     MAIN
+     ================================================================ -->
+<main class="main-wrapper">
+
+  <!-- ============================================================
+       PAGE 1: OVERVIEW
+       ============================================================ -->
+  <section id="section-overview" class="dashboard-section active">
+    <div class="section-head">
+      <div class="section-badge"><i class="fa-solid fa-house-chimney"></i> <span data-i18n="overview">Overview</span></div>
+      <h2 class="section-title" data-i18n="dashboardTitle">Indian Agricultural Market &amp; Climate Intelligence</h2>
+      <p class="section-sub">Market, weather, crop production and farmer-query analysis across four real datasets.</p>
+      <p class="last-updated" id="lastUpdated" aria-live="polite">Last updated: —</p>
+    </div>
+
+    <div class="role-switcher" role="group" aria-label="Dashboard role">
+      <button type="button" class="active" data-role="farmer"><span data-i18n="farmer">Farmer</span></button>
+      <button type="button" data-role="policymaker"><span data-i18n="policymaker">Policymaker</span></button>
+      <button type="button" data-role="marketing"><span data-i18n="marketingBoard">Marketing Board</span></button>
+    </div>
+
+    <div class="card role-card">
+      <div id="roleDashboard" class="role-dashboard" aria-live="polite">
+        <p class="empty-state-message">No role-specific insights are available yet.</p>
+      </div>
+    </div>
+
+    <!-- KPI Grid — animated counters populated by JS -->
+    <div class="kpi-grid" id="overviewKpiGrid">
+      <!-- Skeleton placeholders until data loads -->
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+      <div class="skeleton skeleton-kpi"></div>
+    </div>
+
+    <section class="state-coverage" aria-labelledby="stateCoverageTitle">
+      <h3 id="stateCoverageTitle">State coverage across source data</h3>
+      <p id="stateCoverageNote" class="section-sub">State counts are based on the available mandi and crop-production exports.</p>
+      <div id="productionStateList" class="state-chip-list">
+        <p class="empty-state-message">State coverage is not available yet.</p>
+      </div>
+    </section>
+
+    <div class="card" style="margin-bottom:1.5rem">
+      <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:1rem">
+        <div class="section-badge"><i class="fa-solid fa-lightbulb"></i> Auto-generated Insights</div>
+        <span style="font-size:.76rem;color:var(--text-muted)">Derived from available exported data</span>
+      </div>
+      <div class="insight-strip" id="insightStripOverview">
+        <p class="empty-state-message">No exported insights are available yet.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       PAGE 2: PRICE ANALYSIS
+       ============================================================ -->
+  <section id="section-prices" class="dashboard-section">
+    <div class="section-head">
+      <div class="section-badge"><i class="fa-solid fa-chart-column"></i> <span data-i18n="priceAnalysis">Price Analysis</span></div>
+      <h2 class="section-title" data-i18n="marketPriceTitle">Mandi Market Price Intelligence</h2>
+      <p class="section-sub">Explore real commodity prices and arrivals across APMC mandis.</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-ctrl">
+        <label for="priceStateFilter"><i class="fa-solid fa-map-location-dot"></i> <span data-i18n="state">State</span></label>
+        <select id="priceStateFilter" class="f-select"></select>
+      </div>
+      <div class="filter-ctrl">
+        <label for="priceDistrictFilter"><i class="fa-solid fa-location-dot"></i> <span data-i18n="district">District</span></label>
+        <select id="priceDistrictFilter" class="f-select"></select>
+      </div>
+      <div class="filter-ctrl">
+        <label for="priceCommodityFilter"><i class="fa-solid fa-wheat-awn"></i> <span data-i18n="crop">Crop</span></label>
+        <select id="priceCommodityFilter" class="f-select"></select>
+      </div>
+      <button class="btn btn-ghost btn-sm" id="resetPriceFilters"><i class="fa-solid fa-rotate-left"></i> <span data-i18n="reset">Reset</span></button>
+    </div>
+
+    <!-- Status Strip -->
+    <div class="status-strip">
+      <div class="status-dot-indicator">
+        <span class="s-dot"></span>
+        <span id="priceStatusText">Loading records…</span>
+      </div>
+      <span class="matched-badge" id="priceMatchedBadge">— Records</span>
+    </div>
+    <!-- Charts Row 1: Spectrum + Spread -->
+    <div class="charts-grid-2">
+      <div class="card chart-card">
+        <div class="chart-header">
+          <div class="chart-meta">
+            <h3>Crop Price Spectrum — Min, Modal, Max</h3>
+            <p>₹/Quintal · Dashed line = 3-point moving average</p>
+          </div>
+          <div class="chart-actions">
+            <span class="chart-badge"><i class="fa-solid fa-layer-group"></i> Grouped Bar</span>
+            <button class="btn btn-ghost btn-sm" data-download-chart="cropSpectrum" data-filename="crop_price_spectrum" data-tip="Download as PNG"><i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+        <div class="chart-wrap"><canvas id="cropSpectrumCanvas"></canvas></div>
+      </div>
+
+      <div class="card chart-card">
+        <div class="chart-header">
+          <div class="chart-meta">
+            <h3>Price Volatility (Max − Min Spread)</h3>
+            <p>Higher spread = more volatile procurement price</p>
+          </div>
+          <div class="chart-actions">
+            <span class="chart-badge"><i class="fa-solid fa-arrows-left-right"></i> Volatility</span>
+            <button class="btn btn-ghost btn-sm" data-download-chart="priceSpread" data-filename="price_spread" data-tip="Download as PNG"><i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+        <div class="chart-wrap"><canvas id="priceSpreadCanvas"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Charts Row 2: Top/Bottom 10 -->
+    <div class="card chart-card" style="margin-bottom:1.5rem">
+      <div class="chart-header">
+        <div class="chart-meta">
+          <h3 id="topBottomTitle">Top Crops by Average Modal Price</h3>
+          <p>Sorted by average modal price across matched mandis</p>
+        </div>
+        <div class="chart-actions">
+          <div class="toggle-pair">
+            <button id="topBtn" class="active">Top 10</button>
+            <button id="bottomBtn">Bottom 10</button>
+          </div>
+          <button class="btn btn-ghost btn-sm" data-download-chart="topBottom" data-filename="top_bottom_crops" data-tip="Download as PNG"><i class="fa-solid fa-download"></i></button>
+        </div>
+      </div>
+      <div class="chart-wrap" style="min-height:320px"><canvas id="topBottomCanvas"></canvas></div>
+    </div>
+
+    <!-- State × Commodity Heatmap -->
+    <div class="card" style="margin-bottom:1.5rem">
+      <div class="chart-header">
+        <div class="chart-meta">
+          <h3>State × Commodity Average Price Heatmap</h3>
+          <p>Darker green = higher average modal price (₹/Qtl). Hover a cell to see exact value.</p>
+        </div>
+        <span class="chart-badge"><i class="fa-solid fa-table"></i> Heatmap</span>
+      </div>
+      <div class="heatmap-wrap" id="heatmapWrap">
+        <div class="skeleton" style="height:80px;border-radius:10px"></div>
+      </div>
+    </div>
+
+    <!-- Mandi Records Table -->
+    <div class="card table-card">
+      <div class="table-toolbar">
+        <div class="chart-meta">
+          <h3>Mandi Market Arrivals Table</h3>
+          <p>Click column headers to sort · Search to filter · Download as CSV</p>
+        </div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
+          <div class="search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="tableSearch" placeholder="Search commodity, market…" autocomplete="off">
+          </div>
+          <button class="btn btn-accent btn-sm" id="csvDownloadBtn"><i class="fa-solid fa-file-csv"></i> Download CSV</button>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data-table" id="mandiTable">
+          <thead>
+            <tr>
+              <th data-col="commodity">Commodity <span class="sort-icon"></span></th>
+              <th data-col="district">District <span class="sort-icon"></span></th>
+              <th data-col="market">Market <span class="sort-icon"></span></th>
+              <th data-col="variety">Variety <span class="sort-icon"></span></th>
+              <th data-col="min_price">Min ₹ <span class="sort-icon"></span></th>
+              <th data-col="modal_price">Modal ₹ <span class="sort-icon desc"></span></th>
+              <th data-col="max_price">Max ₹ <span class="sort-icon"></span></th>
+              <th data-col="spread">Spread <span class="sort-icon"></span></th>
+              <th data-col="arrival_date">Date <span class="sort-icon"></span></th>
+            </tr>
+          </thead>
+          <tbody id="mandiTableBody">
+            <tr><td colspan="9" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination" id="tablePagination"></div>
+    </div>
+  </section>
+
+  <section id="section-weather" class="dashboard-section">
+    <div class="section-head">
+      <div class="section-badge"><i class="fa-solid fa-cloud-sun-rain"></i> <span data-i18n="weatherProduction">Weather &amp; Production</span></div>
+      <h2 class="section-title" data-i18n="weatherTitle">Precipitation Trends, NLP Mining &amp; Crop Yield Analysis</h2>
+      <p class="section-sub">Explore rainfall, farmer-query keywords and crop production from the supplied datasets.</p>
+    </div>
+
+    <div class="filter-bar">
+      <div class="filter-ctrl">
+        <label for="rainSubFilter"><i class="fa-solid fa-map"></i> Rainfall subdivision</label>
+        <select id="rainSubFilter" class="f-select"></select>
+      </div>
+    </div>
+
+    <div class="charts-grid-2">
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3>Monthly Average Rainfall (mm)</h3><p>Average by selected rainfall subdivision.</p></div></div>
+        <div class="chart-wrap"><canvas id="rainfallMonthlyCanvas"></canvas></div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3>Rainfall vs. Modal Price</h3><p>Monthly source-exported rainfall and mandi prices.</p></div></div>
+        <div class="chart-wrap"><canvas id="rainfallPriceCanvas"></canvas></div>
+      </div>
+    </div>
+
+    <h3 style="margin:1.25rem 0 1rem;color:var(--text)"><i class="fa-solid fa-comments" style="color:var(--primary);margin-right:.5rem"></i>Farmer Query Keyword Analysis</h3>
+    <div class="charts-grid-2">
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3>Keyword Frequency</h3><p>Topics counted from the farmer-query dataset.</p></div></div>
+        <div class="chart-wrap"><canvas id="keywordCanvas"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="chart-meta" style="margin-bottom:1rem"><h3>Keyword Prominence</h3><p>Relative frequency of matched terms.</p></div>
+        <div class="word-cloud" id="wordCloud"></div>
+        <div class="insight-box" id="cardPest" style="margin-top:1rem">
+          <h4><i class="fa-solid fa-bug"></i> Pest-related query terms</h4>
+          <p>Keyword results will appear when the exported Pig output is available.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:1.5rem 0 1rem;color:var(--text)"><i class="fa-solid fa-seedling" style="color:var(--primary);margin-right:.5rem"></i>Crop Production Analytics</h3>
+    <div class="filter-bar">
+      <div class="filter-ctrl"><label for="prodStateFilter">State</label><select id="prodStateFilter" class="f-select"></select></div>
+      <div class="filter-ctrl"><label for="prodDistrictFilter">District</label><select id="prodDistrictFilter" class="f-select"></select></div>
+      <div class="filter-ctrl"><label for="prodCropFilter">Crop</label><select id="prodCropFilter" class="f-select"></select></div>
+    </div>
+
+    <div class="charts-grid-2">
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3>Top Crops by Production</h3><p>Aggregated from available crop-production records.</p></div></div>
+        <div class="chart-wrap"><canvas id="topCropsProdCanvas"></canvas></div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3>Production and Area by Season</h3><p>Aggregated production and cultivated area.</p></div></div>
+        <div class="chart-wrap"><canvas id="prodSeasonCanvas"></canvas></div>
+      </div>
+    </div>
+    <div class="card chart-card">
+      <div class="chart-header"><div class="chart-meta"><h3>Production Trend by Year</h3><p>Yearly crop-production totals from the source records.</p></div></div>
+      <div class="chart-wrap"><canvas id="prodTrendCanvas"></canvas></div>
+    </div>
+  </section>
+
+  <section id="section-forecast" class="dashboard-section">
+    <div class="section-head">
+      <div class="section-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="forecast">Forecast</span></div>
+      <h2 class="section-title" data-i18n="forecastTitle">Production Forecast</h2>
+      <p class="section-sub" data-i18n="forecastSubtitle">Models use yearly production grouped by state, crop, and season from the real crop-production records.</p>
+    </div>
+    <div class="card forecast-notice" id="forecastNotice">Forecast results are not available yet.</div>
+    <div class="charts-grid-2">
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3 data-i18n="actualForecastProduction">Actual and Forecast Production</h3></div></div>
+        <div class="chart-wrap"><canvas id="forecastActualCanvas"></canvas></div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-header"><div class="chart-meta"><h3 data-i18n="modelErrorComparison">Model Error Comparison</h3></div></div>
+        <div class="chart-wrap"><canvas id="forecastCompareCanvas"></canvas></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 data-i18n="holdoutMetrics">Holdout Error Metrics</h3>
+      <p class="section-sub" data-i18n="holdoutDescription">Models are trained on earlier years and tested on the latest available years.</p>
+      <div id="forecastMetrics"></div>
+    </div>
+  </section>
+
+  <section id="section-insights" class="dashboard-section">
+    <div class="section-head">
+      <div class="section-badge"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="insights">Insights</span></div>
+      <h2 class="section-title">Agricultural Data Analysis</h2>
+      <p class="section-sub">Query descriptions and results generated from the available exported datasets.</p>
+    </div>
+    <div id="hiveInsightsContainer">
+      <p class="empty-state-message">No exported insight results are available yet.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer class="app-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://data.gov.in/resource/current-daily-price-various-commodities-various-markets-mandi" target="_blank" rel="noopener">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Mandi Prices — data.gov.in
+      </a>
+      <a href="https://data.gov.in/catalog/rainfall-india" target="_blank" rel="noopener">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Rainfall India — data.gov.in
+      </a>
+      <a href="https://www.kaggle.com/datasets/daskoushik/farmers-call-query-data-qa" target="_blank" rel="noopener">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Farmer Queries — Kaggle
+      </a>
+      <a href="https://www.kaggle.com/datasets/ppb00x/indiaagriculture" target="_blank" rel="noopener">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> India Agriculture — Kaggle
+      </a>
+    </div>
+    <div>Big Data Driven Analysis of Indian Agricultural Market Prices · Hadoop Ecosystem CAT-II Project</div>
+    <div class="footer-tech">HDFS &bull; MySQL &bull; Apache Sqoop &bull; MongoDB &bull; Apache Pig &bull; Apache Hive &bull; Chart.js &bull; Vanilla JS</div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/data-prep.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

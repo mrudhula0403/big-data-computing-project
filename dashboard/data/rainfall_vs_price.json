@@ -1,0 +1,62 @@
+[
+  {
+    "month": "Jan",
+    "rainfall_mm": 18.9,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "Feb",
+    "rainfall_mm": 21.6,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "Mar",
+    "rainfall_mm": 27.4,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "Apr",
+    "rainfall_mm": 43.1,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "May",
+    "rainfall_mm": 85.7,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "Jun",
+    "rainfall_mm": 230.1,
+    "avg_modal_price": 4728.8
+  },
+  {
+    "month": "Jul",
+    "rainfall_mm": 347.0,
+    "avg_modal_price": 4728.8
+  },
+  {
+    "month": "Aug",
+    "rainfall_mm": 289.7,
+    "avg_modal_price": 4728.8
+  },
+  {
+    "month": "Sep",
+    "rainfall_mm": 197.3,
+    "avg_modal_price": 4317.6
+  },
+  {
+    "month": "Oct",
+    "rainfall_mm": 95.3,
+    "avg_modal_price": 3906.4
+  },
+  {
+    "month": "Nov",
+    "rainfall_mm": 39.5,
+    "avg_modal_price": 3906.4
+  },
+  {
+    "month": "Dec",
+    "rainfall_mm": 19.0,
+    "avg_modal_price": 4317.6
+  }
+]

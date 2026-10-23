@@ -1,0 +1,62 @@
+[
+  {
+    "district": "Alluri Sitharama Raju",
+    "crop": "Ginger(Dry)",
+    "avg_modal_price": 11600.0
+  },
+  {
+    "district": "Alluri Sitharama Raju",
+    "crop": "Groundnut",
+    "avg_modal_price": 7500.0
+  },
+  {
+    "district": "Amritsar",
+    "crop": "Bhindi(Ladies Finger)",
+    "avg_modal_price": 652.0
+  },
+  {
+    "district": "Amritsar",
+    "crop": "Bitter gourd",
+    "avg_modal_price": 1332.0
+  },
+  {
+    "district": "Amritsar",
+    "crop": "Brinjal",
+    "avg_modal_price": 1260.0
+  },
+  {
+    "district": "Amritsar",
+    "crop": "Cauliflower",
+    "avg_modal_price": 3150.0
+  },
+  {
+    "district": "Amritsar",
+    "crop": "Cucumbar(Kheera)",
+    "avg_modal_price": 840.0
+  },
+  {
+    "district": "Kakinada",
+    "crop": "Paddy(Common)",
+    "avg_modal_price": 2550.0
+  },
+  {
+    "district": "Polavaram",
+    "crop": "Paddy(Common)",
+    "avg_modal_price": 2379.0
+  },
+  {
+    "district": "Prakasam",
+    "crop": "Cotton",
+    "avg_modal_price": 8200.0
+  },
+  {
+    "district": "Prakasam",
+    "crop": "Paddy(Common)",
+    "avg_modal_price": 2600.0
+  },
+  {
+    "district": "Srikakulam",
+    "crop": "Paddy(Common)",
+    "avg_modal_price": 2420.5
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "keyword": "pest",
+    "frequency": 5521
+  },
+  {
+    "keyword": "rainfall",
+    "frequency": 1197
+  },
+  {
+    "keyword": "yield",
+    "frequency": 450
+  },
+  {
+    "keyword": "flood",
+    "frequency": 261
+  },
+  {
+    "keyword": "drought",
+    "frequency": 41
+  }
+]

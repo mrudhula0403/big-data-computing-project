@@ -1,0 +1,44 @@
+[
+  {
+    "total_records": 56127,
+    "season": "Whole Year",
+    "total_production_tonnes": 134424837450.19,
+    "total_area_hectares": 254649415.69,
+    "avg_yield": 527.88
+  },
+  {
+    "total_records": 94283,
+    "season": "Kharif",
+    "total_production_tonnes": 4029970242.7,
+    "total_area_hectares": 1403367159.76,
+    "avg_yield": 2.87
+  },
+  {
+    "total_records": 66160,
+    "season": "Rabi",
+    "total_production_tonnes": 2051687553.08,
+    "total_area_hectares": 947909103.69,
+    "avg_yield": 2.16
+  },
+  {
+    "total_records": 6050,
+    "season": "Winter",
+    "total_production_tonnes": 434549828.17,
+    "total_area_hectares": 219597860.14,
+    "avg_yield": 1.98
+  },
+  {
+    "total_records": 14811,
+    "season": "Summer",
+    "total_production_tonnes": 170657925.03,
+    "total_area_hectares": 75314111.64,
+    "avg_yield": 2.27
+  },
+  {
+    "total_records": 4930,
+    "season": "Autumn",
+    "total_production_tonnes": 64413768.22,
+    "total_area_hectares": 48069090.33,
+    "avg_yield": 1.34
+  }
+]

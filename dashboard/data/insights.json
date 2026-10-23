@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-10-14T06:34:04.659234+00:00",
+  "mandi": {
+    "total_records": 17732,
+    "unique_markets": 1727,
+    "unique_commodities": 268,
+    "states_covered": 30,
+    "highest_priced": {
+      "commodity": "Mentha Oil",
+      "modal_price": 320000.0,
+      "market": "Bisoli APMC",
+      "district": "Badaun",
+      "state": "Uttar Pradesh"
+    },
+    "most_volatile": {
+      "commodity": "Cock",
+      "max_spread": 4138.931692545259,
+      "reason": "highest coefficient of variation across available modal prices"
+    },
+    "lowest_priced": {
+      "commodity": "Potato",
+      "modal_price": 2.5
+    }
+  },
+  "rainfall": {
+    "total_rows": 4188,
+    "subdivisions": 36,
+    "year_start": 1901,
+    "year_end": 2017,
+    "years_covered": 117,
+    "highest_rainfall_subdivision": {
+      "name": "Arunachal Pradesh",
+      "annual_mm": 3403.9591397849463
+    },
+    "lowest_rainfall_subdivision": {
+      "name": "West Rajasthan",
+      "annual_mm": 294.125641025641
+    }
+  },
+  "production": {
+    "total_records": 246091,
+    "states": 33,
+    "year_start": 1997,
+    "year_end": 2015,
+    "top_crop": {
+      "name": "Coconut",
+      "total_production_tonnes": 129981629216.29
+    }
+  },
+  "farmer_queries": {
+    "total_records": 178939,
+    "top_keyword": {
+      "keyword": "pest",
+      "frequency": 5521
+    },
+    "all_keywords": [
+      {
+        "keyword": "pest",
+        "frequency": 5521
+      },
+      {
+        "keyword": "rainfall",
+        "frequency": 1197
+      },
+      {
+        "keyword": "yield",
+        "frequency": 450
+      },
+      {
+        "keyword": "flood",
+        "frequency": 261
+      },
+      {
+        "keyword": "drought",
+        "frequency": 41
+      }
+    ]
+  }
+}

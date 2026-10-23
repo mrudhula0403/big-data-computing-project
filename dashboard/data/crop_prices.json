@@ -1,0 +1,65 @@
+[
+  {
+    "crop": "Bhindi(Ladies Finger)",
+    "min_price": 652.0,
+    "modal_price": 652.0,
+    "max_price": 652.0,
+    "records": 1
+  },
+  {
+    "crop": "Bitter gourd",
+    "min_price": 1332.0,
+    "modal_price": 1332.0,
+    "max_price": 1332.0,
+    "records": 1
+  },
+  {
+    "crop": "Brinjal",
+    "min_price": 1260.0,
+    "modal_price": 1260.0,
+    "max_price": 1260.0,
+    "records": 1
+  },
+  {
+    "crop": "Cauliflower",
+    "min_price": 3150.0,
+    "modal_price": 3150.0,
+    "max_price": 3150.0,
+    "records": 1
+  },
+  {
+    "crop": "Cotton",
+    "min_price": 8100.0,
+    "modal_price": 8200.0,
+    "max_price": 8200.0,
+    "records": 1
+  },
+  {
+    "crop": "Cucumbar(Kheera)",
+    "min_price": 840.0,
+    "modal_price": 840.0,
+    "max_price": 840.0,
+    "records": 1
+  },
+  {
+    "crop": "Ginger(Dry)",
+    "min_price": 11500.0,
+    "modal_price": 11600.0,
+    "max_price": 11650.0,
+    "records": 1
+  },
+  {
+    "crop": "Groundnut",
+    "min_price": 7450.0,
+    "modal_price": 7500.0,
+    "max_price": 7550.0,
+    "records": 1
+  },
+  {
+    "crop": "Paddy(Common)",
+    "min_price": 2369.0,
+    "modal_price": 2474.0,
+    "max_price": 2600.0,
+    "records": 5
+  }
+]

@@ -1,0 +1,19 @@
+# Local dependencies and runtime caches
+scripts/node_modules/
+scripts/__pycache__/
+__pycache__/
+*.py[cod]
+
+# Local Sqoop state and credentials
+scripts/.sqoop_last_record_id
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

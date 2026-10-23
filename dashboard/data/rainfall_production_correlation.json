@@ -1,0 +1,191 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "correlation": -0.407526918201978,
+    "years": 18,
+    "production_total": 17324590296.0,
+    "avg_annual_rainfall_mm": 920.8444444444444,
+    "production_gap_from_mean": 10681472159.343334,
+    "rainfall_gap_from_mean_mm": -392.6507180362398
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "correlation": -0.2702074670013057,
+    "years": 18,
+    "production_total": 6823912.6,
+    "avg_annual_rainfall_mm": 2487.422222222222,
+    "production_gap_from_mean": -6636294224.056666,
+    "rainfall_gap_from_mean_mm": 1173.9270597415377
+  },
+  {
+    "state": "Assam",
+    "correlation": 0.40082205152988976,
+    "years": 18,
+    "production_total": 2111751759.0,
+    "avg_annual_rainfall_mm": 2381.688888888889,
+    "production_gap_from_mean": -4531366377.656667,
+    "rainfall_gap_from_mean_mm": 1068.1937264082046
+  },
+  {
+    "state": "Bihar",
+    "correlation": -0.2168043219531618,
+    "years": 18,
+    "production_total": 366483596.65999997,
+    "avg_annual_rainfall_mm": 1146.5444444444447,
+    "production_gap_from_mean": -6276634539.996667,
+    "rainfall_gap_from_mean_mm": -166.95071803623955
+  },
+  {
+    "state": "Chhattisgarh",
+    "correlation": 0.5693488934103803,
+    "years": 15,
+    "production_total": 100951908.00999999,
+    "avg_annual_rainfall_mm": 1264.8000000000002,
+    "production_gap_from_mean": -6542166228.646667,
+    "rainfall_gap_from_mean_mm": -48.695162480684075
+  },
+  {
+    "state": "Gujarat",
+    "correlation": 0.8445446895219458,
+    "years": 16,
+    "production_total": 524291337.0,
+    "avg_annual_rainfall_mm": 767.6593750000001,
+    "production_gap_from_mean": -6118826799.656667,
+    "rainfall_gap_from_mean_mm": -545.8357874806842
+  },
+  {
+    "state": "Haryana",
+    "correlation": -0.5081502449095815,
+    "years": 16,
+    "production_total": 381273890.0,
+    "avg_annual_rainfall_mm": 497.31249999999994,
+    "production_gap_from_mean": -6261844246.656667,
+    "rainfall_gap_from_mean_mm": -816.1826624806843
+  },
+  {
+    "state": "Himachal Pradesh",
+    "correlation": -0.058915923938133954,
+    "years": 12,
+    "production_total": 17805168.6,
+    "avg_annual_rainfall_mm": 1113.7583333333332,
+    "production_gap_from_mean": -6625312968.056666,
+    "rainfall_gap_from_mean_mm": -199.73682914735105
+  },
+  {
+    "state": "Jharkhand",
+    "correlation": 0.8980305495235283,
+    "years": 7,
+    "production_total": 10777741.750000002,
+    "avg_annual_rainfall_mm": 1138.6857142857143,
+    "production_gap_from_mean": -6632340394.906667,
+    "rainfall_gap_from_mean_mm": -174.80944819496995
+  },
+  {
+    "state": "Karnataka",
+    "correlation": 0.08373746138468456,
+    "years": 18,
+    "production_total": 863429811.68,
+    "avg_annual_rainfall_mm": 1740.414814814815,
+    "production_gap_from_mean": -5779688324.976666,
+    "rainfall_gap_from_mean_mm": 426.91965233413066
+  },
+  {
+    "state": "Kerala",
+    "correlation": -0.22199009915538664,
+    "years": 18,
+    "production_total": 97880045375.7,
+    "avg_annual_rainfall_mm": 2908.1555555555556,
+    "production_gap_from_mean": 91236927239.04333,
+    "rainfall_gap_from_mean_mm": 1594.6603930748713
+  },
+  {
+    "state": "Madhya Pradesh",
+    "correlation": 0.41148417552576494,
+    "years": 17,
+    "production_total": 448840738.65999997,
+    "avg_annual_rainfall_mm": 1022.6176470588235,
+    "production_gap_from_mean": -6194277397.996667,
+    "rainfall_gap_from_mean_mm": -290.8775154218607
+  },
+  {
+    "state": "Maharashtra",
+    "correlation": -0.048298959169871925,
+    "years": 18,
+    "production_total": 1263640606.2,
+    "avg_annual_rainfall_mm": 1712.459259259259,
+    "production_gap_from_mean": -5379477530.456667,
+    "rainfall_gap_from_mean_mm": 398.9640967785747
+  },
+  {
+    "state": "Odisha",
+    "correlation": 0.5983078030805412,
+    "years": 19,
+    "production_total": 160904070.10000002,
+    "avg_annual_rainfall_mm": 1437.0368421052633,
+    "production_gap_from_mean": -6482214066.556666,
+    "rainfall_gap_from_mean_mm": 123.54167962457905
+  },
+  {
+    "state": "Punjab",
+    "correlation": -0.24087922570294656,
+    "years": 18,
+    "production_total": 586385001.0,
+    "avg_annual_rainfall_mm": 501.8222222222223,
+    "production_gap_from_mean": -6056733135.656667,
+    "rainfall_gap_from_mean_mm": -811.672940258462
+  },
+  {
+    "state": "Rajasthan",
+    "correlation": 0.8754211278548085,
+    "years": 14,
+    "production_total": 281320270.5,
+    "avg_annual_rainfall_mm": 410.8892857142858,
+    "production_gap_from_mean": -6361797866.156667,
+    "rainfall_gap_from_mean_mm": -902.6058767663985
+  },
+  {
+    "state": "Tamil Nadu",
+    "correlation": -0.038161642874982825,
+    "years": 17,
+    "production_total": 12076443048.93,
+    "avg_annual_rainfall_mm": 882.6058823529412,
+    "production_gap_from_mean": 5433324912.273334,
+    "rainfall_gap_from_mean_mm": -430.88928012774306
+  },
+  {
+    "state": "Telangana",
+    "correlation": 0.08034978879905419,
+    "years": 17,
+    "production_total": 335147930.0,
+    "avg_annual_rainfall_mm": 946.7176470588234,
+    "production_gap_from_mean": -6307970206.656667,
+    "rainfall_gap_from_mean_mm": -366.7775154218608
+  },
+  {
+    "state": "Uttar Pradesh",
+    "correlation": -0.3349268734793329,
+    "years": 18,
+    "production_total": 3234492662.7,
+    "avg_annual_rainfall_mm": 736.5777777777778,
+    "production_gap_from_mean": -3408625473.956667,
+    "rainfall_gap_from_mean_mm": -576.9173847029065
+  },
+  {
+    "state": "Uttarakhand",
+    "correlation": 0.10543196872561118,
+    "years": 15,
+    "production_total": 132177355.0,
+    "avg_annual_rainfall_mm": 1445.6133333333337,
+    "production_gap_from_mean": -6510940781.656667,
+    "rainfall_gap_from_mean_mm": 132.11817085264943
+  },
+  {
+    "state": "West Bengal",
+    "correlation": -0.013529101979131703,
+    "years": 18,
+    "production_total": 1397904389.7,
+    "avg_annual_rainfall_mm": 2119.7722222222224,
+    "production_gap_from_mean": -5245213746.956667,
+    "rainfall_gap_from_mean_mm": 806.2770597415381
+  }
+]

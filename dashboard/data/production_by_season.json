@@ -1,0 +1,38 @@
+[
+  {
+    "season": "Autumn",
+    "total_production": 64413768.22,
+    "total_area": 48069090.33,
+    "records": 286
+  },
+  {
+    "season": "Kharif",
+    "total_production": 4029970242.7,
+    "total_area": 1403367159.76,
+    "records": 6248
+  },
+  {
+    "season": "Rabi",
+    "total_production": 2051687553.08,
+    "total_area": 947909103.69,
+    "records": 4190
+  },
+  {
+    "season": "Summer",
+    "total_production": 170657925.03,
+    "total_area": 75314111.64,
+    "records": 794
+  },
+  {
+    "season": "Whole Year",
+    "total_production": 134424837450.19,
+    "total_area": 254649415.69,
+    "records": 3538
+  },
+  {
+    "season": "Winter",
+    "total_production": 434549828.17,
+    "total_area": 219597860.14,
+    "records": 355
+  }
+]

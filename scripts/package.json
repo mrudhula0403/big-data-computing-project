@@ -1,0 +1,13 @@
+{
+  "name": "agri-mongo-import",
+  "version": "1.0.0",
+  "description": "Ingest Indian Agriculture crop metadata into MongoDB for Big Data Project",
+  "main": "mongo_import.js",
+  "scripts": {
+    "start": "node mongo_import.js"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "mongodb": "^6.5.0"
+  }
+}

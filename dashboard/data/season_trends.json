@@ -1,0 +1,47 @@
+[
+  {
+    "season": "Kharif",
+    "crop": "Bhindi(Ladies Finger)",
+    "avg_modal_price": 652.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Bitter gourd",
+    "avg_modal_price": 1332.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Brinjal",
+    "avg_modal_price": 1260.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Cauliflower",
+    "avg_modal_price": 3150.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Cotton",
+    "avg_modal_price": 8200.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Cucumbar(Kheera)",
+    "avg_modal_price": 840.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Ginger(Dry)",
+    "avg_modal_price": 11600.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Groundnut",
+    "avg_modal_price": 7500.0
+  },
+  {
+    "season": "Kharif",
+    "crop": "Paddy(Common)",
+    "avg_modal_price": 2474.0
+  }
+]
